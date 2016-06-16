@@ -46,6 +46,11 @@ body {
     body .main .roomsMain .roomList .roompic {
       width: 200px;
       height: 200px; }
+    body .main .roomsMain .roomList .roomdescription {
+      font-family: Ariel;
+      font-size: 1.5em;
+      font-weight: normal;
+      color: white; }
     body .main .barMain .barpics {
       display: inline-block; }
       body .main .barMain .barpics .barpic {
@@ -63,6 +68,11 @@ body {
     body .main .paragraph {
       font-family: Courier;
       font-size: 150%;
+      color: white; }
+    body .main .testimonialsMain .testimonials {
+      font-family: Ariel;
+      font-size: 1.5em;
+      font-weight: normal;
       color: white; }
 
 /*# sourceMappingURL=bennethouse.css.map */
