@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <!--Sidebar content-->
+
+      <p>
+        Search:
+        <input ng-model="$ctrl.query" />
+      </p>
+
+      <p>
+        Sort by:
+        <select ng-model="$ctrl.orderProp">
+          <option value="price">Price</option>
+          <option value="size">Size</option>
+        </select>
+      </p>
+
+    </div>
+    <div class="col-md-10">
+      <!--Body content-->
+
+      <ul class="rooms">
+        <li ng-repeat="room in $ctrl.rooms | filter:$ctrl.query | orderBy:$ctrl.orderProp"
+            class="thumbnail room-list-item">
+          <a href="#!/rooms/{{room.id}}" class="thumb">
+            <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" />
+          </a>
+          <a href="#!/rooms/{{room.id}}">{{room.name}}</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>

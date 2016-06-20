@@ -1,0 +1,21 @@
+<div class="room-images">
+  <img ng-src="{{img}}" class="room"
+      ng-class="{selected: img === $ctrl.mainImageUrl}"
+      ng-repeat="img in $ctrl.room.images" />
+</div>
+
+<h1>{{$ctrl.room.name}}</h1>
+
+<p>{{$ctrl.room.description}}</p>
+
+
+<ul class="specs">
+  <li>
+    <span>Size</span>
+    <dd>{{$ctrl.room.size}}</dd>
+  </li>
+    <li>
+    <span>Price</span>
+    <dd>{{$ctrl.room.price}}</dd>
+  </li>
+</ul>
