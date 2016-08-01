@@ -13,11 +13,12 @@ function changeTextColorInNavbar(){
 	changeColorWhenHover("#rooms");
 	changeColorWhenHover("#bar");
 }
-//function loadTestimonials(){
-	//$("#testimonialsbutton").click(function(){
-		//$("#homeMain").load("testimonials.html #testimonials");
-	//}
-//}
+function loadTestimonials(){
+	$("#testimonialsbutton").on("click", function(){
+		$("#testimonials").toggle("slow")
+	})
+};
 
-//loadTestimonials();
+
+loadTestimonials();
 changeTextColorInNavbar();
